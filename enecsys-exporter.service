@@ -1,0 +1,11 @@
+[Unit]
+Description=Enecsys Prometheus Exporter
+
+[Service]
+User=nobody
+ExecStart=/usr/local/bin/enecsys-exporter
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
